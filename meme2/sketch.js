@@ -29,6 +29,7 @@ function setup(){
 function draw(){
     background( textcolor);
     s += 2;
+    // regular image will start from left to right and reset
     if (mouseX < width/2 && mouseY < height/2){
     image(pumpkin, -90,0,s,height);
         if(s > 1000){
@@ -48,7 +49,8 @@ function draw(){
     textSize(textsize);
     fill( textcolor);
     } else if (mouseX > width/2 && mouseY < height/2) {
-    image(eyes,-10,0,s,height);
+        //weierd eyes image start from left to right also
+        image(eyes,-10,0,s,height);
         if(s > 600){
             s=100;
             
@@ -67,7 +69,8 @@ function draw(){
     textSize(textsize);
     fill( textcolor);
     } else if (mouseX < width/2 && mouseY > height/2){
-    image(crack,0,0,width,s);
+   // image of cracked glasses start from top to bottom at a speed of 1 
+        image(crack,0,0,width,s);
         if(s>600){
             s +=1;
             s = 100;
@@ -92,7 +95,8 @@ function draw(){
         
     
     } else if(mouseX > width/2 && mouseY > height/2) {
-    image(kid,0,-70,width,s);
+    //image of kid start from top to bottom and will stretch out longer than normal
+        image(kid,0,-70,width,s);
         if(s > 1000){
             s = 100 ;
             
