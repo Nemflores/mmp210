@@ -49,7 +49,7 @@ function draw(){
     textSize(textsize);
     fill( textcolor);
     } else if (mouseX > width/2 && mouseY < height/2) {
-        //weierd eyes image start from left to right also
+        //weierd eyes image rotates when mouse is on top right
         var r = frameCount / 200 * PI;
         rotate(r);
         
@@ -69,10 +69,12 @@ function draw(){
     textSize(textsize);
     fill( textcolor);
     } else if (mouseX < width/2 && mouseY > height/2){
-   // image of cracked glasses start from top to bottom at a speed of 1 
+   // image of cracked glasses rotates when mouse is on bottom left
         var r = frameCount / 200 * PI;
         rotate(r);
+        image(crack,0,0,width,height);
         
+        translate
         image(crack,0,0,width,height);
         
         
