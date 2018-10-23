@@ -30,7 +30,7 @@ function draw(){
     background( textcolor);
     s += 2;
     if (mouseX < width/2 && mouseY < height/2){
-    image(pumpkin, -90,0,width,height);
+    image(pumpkin, -90,0,s,height);
         if(s > 1000){
         s = 100;
     }
@@ -48,7 +48,7 @@ function draw(){
     textSize(textsize);
     fill( textcolor);
     } else if (mouseX > width/2 && mouseY < height/2) {
-    image(eyes,-10,0,width,height);
+    image(eyes,-10,0,s,height);
         if(s > 600){
             s=100;
             
@@ -67,7 +67,7 @@ function draw(){
     textSize(textsize);
     fill( textcolor);
     } else if (mouseX < width/2 && mouseY > height/2){
-    image(crack,0,0,width,height);
+    image(crack,0,0,width,s);
         if(s>600){
             s +=1;
             s = 100;
@@ -92,7 +92,7 @@ function draw(){
         
     
     } else if(mouseX > width/2 && mouseY > height/2) {
-    image(kid,0,-70,width,height);
+    image(kid,0,-70,width,s);
         if(s > 1000){
             s = 100 ;
             
