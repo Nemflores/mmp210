@@ -50,11 +50,11 @@ function draw(){
     fill( textcolor);
     } else if (mouseX > width/2 && mouseY < height/2) {
         //weierd eyes image start from left to right also
-        image(eyes,-10,0,s,height);
-        if(s > 600){
-            s=100;
-            
-        }
+        var r = frameCount / 200 * PI;
+        rotate(r);
+        
+        image(eyes,0,0,width,height);
+        
         
     text("When you're dying inside", text1x,text1y,);
     textSize(textsize);
@@ -70,11 +70,12 @@ function draw(){
     fill( textcolor);
     } else if (mouseX < width/2 && mouseY > height/2){
    // image of cracked glasses start from top to bottom at a speed of 1 
-        image(crack,0,0,width,s);
-        if(s>600){
-            s +=1;
-            s = 100;
-        }
+        var r = frameCount / 200 * PI;
+        rotate(r);
+        
+        image(crack,0,0,width,height);
+        
+        
         
     text("When you're dying inside", text1x,text1y,);
     textSize(textsize);
