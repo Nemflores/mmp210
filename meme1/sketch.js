@@ -16,10 +16,10 @@ var s = 50;
 
 
 function preload(){
-    pumpkin = loadImage("pumpkin.jpg");
-    eyes = loadImage("eyes.jpg");
-    crack = loadImage("crack.jpg");
-    kid = loadImage("kid.jpg");
+    pumpkin = loadImage("pumpkin.jpg"); // regular picture
+    eyes = loadImage("eyes.jpg"); // weird eyes picture
+    crack = loadImage("crack.jpg"); // cracked glasses picture
+    kid = loadImage("kid.jpg"); // little kid picture
 }
 
 function setup(){
@@ -29,11 +29,10 @@ function setup(){
 function draw(){
     background( textcolor);
     s += 2;
+    // regular picture top left
     if (mouseX < width/2 && mouseY < height/2){
-    image(pumpkin, -90,0,width,height);
-        if(s > 1000){
-        s = 100;
-    }
+    image(pumpkin, 0,0,width,height);
+        
     
     text("When you're dying inside", text1x,text1y,);
     textSize(textsize);
@@ -47,12 +46,10 @@ function draw(){
     text("calls you handsome ",text3x,text3y,);
     textSize(textsize);
     fill( textcolor);
+    // weird eyes picture top right
     } else if (mouseX > width/2 && mouseY < height/2) {
-    image(eyes,-10,0,width,height);
-        if(s > 600){
-            s=100;
-            
-        }
+    image(eyes,0,0,width,height);
+        
         
     text("When you're dying inside", text1x,text1y,);
     textSize(textsize);
@@ -67,11 +64,8 @@ function draw(){
     textSize(textsize);
     fill( textcolor);
     } else if (mouseX < width/2 && mouseY > height/2){
-    image(crack,0,0,width,height);
-        if(s>600){
-            s +=1;
-            s = 100;
-        }
+    image(crack,0,0,width,height); //cracked glasses bottom left
+        
         
     text("When you're dying inside", text1x,text1y,);
     textSize(textsize);
@@ -92,11 +86,7 @@ function draw(){
         
     
     } else if(mouseX > width/2 && mouseY > height/2) {
-    image(kid,0,-70,width,height);
-        if(s > 1000){
-            s = 100 ;
-            
-        }
+    image(kid,0,0,width,height); // kid picture bottom right
         
     text("When your crush calls you ",15,410);
     textSize(textsize);
