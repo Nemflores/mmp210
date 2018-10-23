@@ -1,0 +1,42 @@
+body{
+  background-color:#3498DB;
+}
+h1{
+  text-align:center;
+  font-size:3em;
+  color:gold;
+  font-family:;
+}
+  
+ul {
+  list-style-type:none;
+}
+
+img{
+  text-align:center;
+}
+
+li{
+  font-size:2em;
+  text-align:center;
+  padding-top:2em;
+}
+
+a{
+  text-decoration:none;
+  color:gold;
+}
+
+a:hover{
+  color:red;
+  font-family: 'Volkhov', serif;
+  font-size:40px;
+  transition:color 1.5s;
+ 
+}
+img{
+  display:block;
+  margin:0 auto;
+  
+}
+
