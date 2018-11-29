@@ -10,9 +10,9 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(900, 500);
+    createCanvas(800, 500);
     textSize(60);
-    textFont('monospace');
+    textFont('Merriweather');
     textAlign(CENTER, CENTER);
     rectMode(CENTER);
 }
@@ -21,10 +21,10 @@ function draw() {
     background(220);
     
     if (slide == 0) {
-        text("Final Project Idea", width/2, height/2);
+        text("Final Project Idea. Maybe?", width/2, height/2);
     } else if (slide == 1) {
-        textSize(30);
-        text("Rain Sensor", 200, 100);
+        textSize(40);
+        text("Physical sensor: Rain Sensor", 400, 100);
         image(sensor,200,160);
         // fsr graphic
        
@@ -35,8 +35,8 @@ function draw() {
     }else if (slide == 3){
         textSize(40);
         text("We are gonna make it rain!",400,200);
-        text("When the rain sensor detects water,",450,240);
-        text("our character will be in the rain.",450,280);
+        text("When the rain sensor detects water,",400,240);
+        text("our character will be in the rain.",400,280);
     }
     else if (slide == 4) { 
         image(kid, 400, 100, 200, 400);
