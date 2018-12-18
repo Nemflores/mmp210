@@ -124,10 +124,15 @@ function draw() {
     }
     
     
+    
+    
 
     drawSprites();
 
     raindown();
+    
+    //If it is not raining, it will warn that it could rain soon//
+    warning();
 }
 
 
@@ -136,23 +141,39 @@ function raindown() {
 
 
     if (sensorValue == 1) {
+    
+    //Text that will appear if it is raining and mouse is pressed//
+    if(mouseIsPressed){
+    fill("red")
+    textSize(100);
+	text("It Is!", 20, 80);
+    }
+        
+        //Rain sound if it is raining//
         rainMusic.play();
         
-        //        image(rain,0,0,750,360);
+        
         animation(rain6_animation, 380, 160, 1150, 360);
     }
-//    else if {
-//        player.changeAnimation('idle2');
-//    }
+
         else{rainMusic.stop();
         
         }  
 
 }
 
-//function warning(){
-//    if()
-//}
+function warning(){
+    if(sensorValue == 0){
+    if(mouseIsPressed){
+    fill("red")
+    textSize(60);
+	text("Possible rain incoming!!! ", 20, 80);
+    }
+    }
+}
+
+
+
 
 
     
