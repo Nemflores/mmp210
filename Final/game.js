@@ -164,6 +164,7 @@ function raindown() {
 
 function warning(){
     if(sensorValue == 0){
+        player.changeAnimation('idle');
     if(mouseIsPressed){
     fill("red")
     textSize(60);
