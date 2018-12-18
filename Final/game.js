@@ -120,7 +120,7 @@ function draw() {
         player.changeAnimation('run2');
         player.position.x -= player_speed;
     } else {
-        player.changeAnimation('idle');
+//        player.changeAnimation('idle');
     }
     
     
@@ -141,7 +141,7 @@ function raindown() {
 
 
     if (sensorValue == 1) {
-    
+    player.changeAnimation('idle2');
     //Text that will appear if it is raining and mouse is pressed//
     if(mouseIsPressed){
     fill("red")
